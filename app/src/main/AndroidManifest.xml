@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techboy.projecthub">
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".civil"
+            android:label="Civil projects" />
+        <activity android:name=".civilpd"
+            android:label="Civil projects"/>
+        <activity android:name=".civilpi"
+            android:label="Civil projects"/>
+        <activity
+            android:name=".computer"
+            android:label="Computer projects" />
+        <activity android:name=".computerpd"
+            android:label="Computer projects"/>
+        <activity android:name=".computerpi"
+            android:label="Computer projects"/>
+        <activity
+            android:name=".ece"
+            android:label="ECE projects" />
+        <activity android:name=".ecepd"
+            android:label="ECE projects"/>
+        <activity android:name=".ecepi"
+            android:label="ECE projects"/>
+        <activity
+            android:name=".electricals"
+            android:label="Electrical projects" />
+        <activity android:name=".electricalspd"
+            android:label="Electrical projects"/>
+        <activity android:name=".electricalspi"
+            android:label="Electrical projects"/>
+        <activity
+            android:name=".mech"
+            android:label="Mechanical projects" />
+        <activity
+            android:name=".mechpd"
+            android:label="Mechanical projects" />
+        <activity
+            android:name=".mechpi"
+            android:label="Mechanical projects" />
+        <activity android:name=".java"
+            android:label="JAVA projects"/>
+        <activity android:name=".arduino"
+            android:label="ARDUINO projects"/>
+        <activity android:name=".db"
+            android:label="DATABASE projects"/>
+        <activity android:name=".cad"
+            android:label="CAD/CAM projects"/>
+        <activity android:name=".thermo"
+            android:label="THERMODYNAMICS projects"/>
+        <activity android:name=".sensor"
+            android:label="SENSOR projects"/>
+        <activity android:name=".mc"
+            android:label="MICROCONTROLLER projects"/>
+    </application>
+
+</manifest>

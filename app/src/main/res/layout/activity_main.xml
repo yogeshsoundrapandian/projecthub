@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.techboy.projecthub.MainActivity"
+    android:background="@drawable/bgbg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:background="@color/ripple_material_light"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Choose Domain:"
+            android:id="@+id/textView"
+            android:layout_gravity="left"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="05dp"
+            android:textColor="#9CCC65" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/spinner1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="05dp"
+            android:background="@color/secondary_text_default_material_dark" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogroup">
+
+        <RadioButton
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:text="Mini Projects"
+            android:id="@+id/rb1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:text="Project Ideas"
+            android:id="@+id/rb2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:checked="false"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <RadioButton
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:text="Project Downloads"
+            android:id="@+id/rb3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:checked="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+</RadioGroup>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="06dp"
+            android:foregroundGravity="center"
+            android:background="#AED581"
+            android:text="SEARCH"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Application\nBased\nProjects"
+                android:id="@+id/textView2"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="05dp"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:textColor="#9CCC65" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/ripple_material_light">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:text="JAVA projects"
+                        android:id="@+id/button2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#AED581"
+                        android:layout_marginTop="10dp"
+                        android:textAlignment="center"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:text="DATABASE projects"
+                        android:id="@+id/button3"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#AED581"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:text="CAD/CAM projects"
+                        android:id="@+id/button4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#AED581"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:text="ARDUINO projects"
+                        android:id="@+id/button5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#AED581"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:text="MICROCONTROLLER projects"
+                        android:id="@+id/button6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#AED581"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:text="SENSOR projects"
+                        android:id="@+id/button7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#AED581"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:text="THERMODYNAMICS projects"
+                        android:id="@+id/button8"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#AED581"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
